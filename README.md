@@ -6,7 +6,7 @@
 
 > An AI-powered multi-agent system that creates personalized 4-week learning roadmaps to help freshers land their dream roles.
 
-![Agent Pilot Architecture](./architecture_diagram.png)
+![architecture](https://github.com/N4M154/Capstone-Project/blob/8a7ed04d22ad16b66ed0fb93d1effab43e299a29/architecture.png)
 
 ##  What is Agent Pilot?
 
@@ -49,7 +49,7 @@ Agent Pilot is an intelligent career preparation assistant built with Google's A
 
 ### Prerequisites
 - Python 3.11 or higher
-- Google AI Studio API key ([Get one here](https://aistudio.google.com/app/apikey))
+- Google AI Studio API key
 
 ### Installation
 ```bash
@@ -73,7 +73,7 @@ GOOGLE_GENAI_USE_VERTEXAI=FALSE
 GOOGLE_API_KEY=your_api_key_here
 ```
 
-2. Update `roadmap_agent/config.py` - uncomment the dotenv lines (20-22):
+2. Update `roadmap_agent/config.py` - uncomment the dotenv lines:
 ```python
 from dotenv import load_dotenv
 load_dotenv()
@@ -88,7 +88,6 @@ adk web
 ```
 
 
----
 
 ##  Example Conversation
 ```
@@ -121,7 +120,6 @@ Agent Pilot: ✅ Roadmap saved successfully!
 
 ---
 
----
 
 ##  How It Works
 
@@ -148,9 +146,9 @@ This solves the limitation of newer Gemini models not supporting direct tool use
 
 ##  Technologies Used
 
-- **[Google ADK](https://github.com/google/adk)** - Agent Development Kit for multi-agent orchestration
-- **[Gemini 2.5 Flash](https://ai.google.dev/)** - Advanced language models for reasoning
-- **[Gemini 2.0 Flash](https://ai.google.dev/)** - Tool-enabled models for web search
+- **Google ADK** - Agent Development Kit for multi-agent orchestration
+- **Gemini 2.5 Flash** - Advanced language models for reasoning
+- **Gemini 2.0 Flash** - Tool-enabled models for web search
 - **Python 3.11+** - Core programming language
 - **Google Search API** - Real-time job market research
 
@@ -170,17 +168,11 @@ This solves the limitation of newer Gemini models not supporting direct tool use
 
 Run the integration test suite:
 ```bash
-# Full conversation flow test
+
 python -m tests.test_agent
 
-# Quick single-query test
-python -m tests.test_agent --quick
-
-# Or use pytest
-pytest tests/ -v
 ```
 
----
 
 ##  Roadmap & Future Enhancements
 
@@ -219,12 +211,11 @@ Here's what an Agent Pilot roadmap looks like:
 
 ---
 
----
 
 ##  Acknowledgments
 
-- Built for the [Kaggle Agents Intensive Capstone Project](https://www.kaggle.com/competitions/agents-intensive-course-capstone-2025/)
-- Powered by [Google Agent Development Kit (ADK)](https://github.com/google/adk)
+- Built for the [Kaggle Agents Intensive Capstone Project](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
+- Powered by Google Agent Development Kit (ADK)
 - Inspired by the ADK sample projects and community contributions
 - Special thanks to the Google AI team for Gemini models and tools
 
